@@ -1,0 +1,53 @@
+Persona 5 Map Replacement,  and Making guide
+
+Written By: Kirblinkness 
+
+SOFTWARE NEEDED:
+
+Autodesk 3ds Max (I'm using 2021 but this should work on lower software versions)
+
+GFD Studio by TGE: https://github.com/TGEnigma/GFD-Studio/releases
+
+Mod Compendium/Aemulus:
+
+Aemulus: https://github.com/TekkaGB/AemulusModManager
+
+Mod Compendium: https://github.com/TGEnigma/Mod-Compendium/releases/
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Ok with that out of the way, Let's get started!
+-----------------------------------------------------------------------------------------------------------------------------------
+Start off by making a new mod in Aemulus or the Mod Compendium and inside of the data folder make a folder called "model" inside of your model folder, you want to make another folder named "field_tex" this is going to be used for putting your model in and compiling.
+
+after you do this, open 3ds max
+
+Let's create a plane and name it something like "Placeholder_Floor_01"
+
+Now that you have your plane, lets make some basic needs for a room for example (Walls, Roof, Door etc.)
+
+To make a door/wall go into "Create/AEC Objects" and both should be objects in there.
+
+Once you've made the room you want to, we need to add cameras and lights so we can see the model and a camera just incase.
+
+Now export your model as an FBX. I suppose you can also export as OBJ or DAE however I prefer FBX.
+
+Let's import our map into Persona 5 now!
+
+Go into GFD Studio and click file->New->Model
+
+Now load your model.
+
+Once you've loaded your model, Leave Version be and choose FieldTerrain.
+
+Depending on your models position, Convert skin to Z up should be checked, as far as I've tested the rest should be optional.
+(If they're checked by default, then leave them be.)
+
+Okay! Time for the final step. 
+
+Look at your model and make sure everything is alright (size, colors, rotation) Then click File->Save As-> then save as a .GFS with the name being one of the field names from dev_hdd0>game><Your regions Persona 5 title id>>USRDIR>data>model>field_tex. Example: f000_002_0.GFS
+
+For Aemulus: put your .GFS file into AemulusPackageManagerVx.x.x > Packages > Persona 5 > (Your mod)> data > model > field_tex
+
+For Mod Compendium: Mods> Persona 5> (Your mod) > data > model > field_tex
+
+Now you're ready to use your maps! happy map modding!
